@@ -2,9 +2,9 @@ module.exports = templateData => {
     console.log(templateData);
   
     return `
-    # ${data.title}
+    # ${templateData.name}
 ## Description
-${templateData.name}
+${templateData.description}
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -13,14 +13,19 @@ ${templateData.name}
 - [Tests](#tests)
 - [Questions](#questions)
 ## Installation
-${templateData.install}
+${templateData.installation}
 ## Usage
 ${templateData.usage}
-${renderLicenseSection(data.license)}
+${renderLicenseSection(templateData.license)}
 ## Contribution
-${templateData.contributions}
+${templateData.contributing}
 ## Tests
 ${templateData.testing}
+## Languages#
+${templateData.languages}
+## Links
+${templateData.githubLink}
+${templateData.deployedLink}
 ## Questions
 For further questions, please contact me at: [GitHub]('https://github.com/'${templateData.username}) or ${templateData.email}
     `;

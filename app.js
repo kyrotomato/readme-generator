@@ -71,7 +71,7 @@ Generate your readme!
       },
       {
         type: 'input',
-        name: 'usage',
+        name: 'contributing',
         message: 'Who are your contributers for this project?',
         validate: contributersInput => {
           if (contributersInput) {
@@ -84,13 +84,13 @@ Generate your readme!
       },
       {
         type: 'input',
-        name: 'usage',
-        message: 'Who are your contributers for this project?',
+        name: 'testing',
+        message: 'What were your tests?',
         validate: testsInput => {
           if (testsInput) {
             return true;
           } else {
-            console.log('You need to enter contributers! If none enter none');
+            console.log('Please enter your tests!');
             return false;
           }
         }
@@ -103,8 +103,8 @@ Generate your readme!
       },
       {
         type: 'input',
-        name: 'link',
-        message: 'Enter the GitHub link to your project. (Required)',
+        name: 'githubLink',
+        message: 'Enter the GitHub link to your project.',
         validate: gitlinkInput => {
           if (gitlinkInput) {
             return true;
@@ -116,13 +116,39 @@ Generate your readme!
       },
       {
         type: 'input',
-        name: 'link',
-        message: 'Enter the deployed link to your project. (Required)',
+        name: 'deployedLink',
+        message: 'Enter the deployed link to your project.',
         validate: deployedlinkInput => {
           if (deployedlinkInput) {
             return true;
           } else {
             console.log('You need to enter a project GitHub link!');
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
+        name: 'githubUser',
+        message: 'What is your github username?',
+        validate: gitusernameInput => {
+          if (gitusernameInput) {
+            return true;
+          } else {
+            console.log('You need to enter a username!');
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your preferred contact email',
+        validate: emailInput => {
+          if (emailInput) {
+            return true;
+          } else {
+            console.log('You need to enter a valid email!');
             return false;
           }
         }
