@@ -167,7 +167,7 @@ Generate your readme!
 
 promptReadme()
   .then(readmeData => {
-    const pageHTML = generatePage(readmeData);
+    const pageMD = generatePage(readmeData);
 
      fs.writeFile('./readme.md', pageMD, err => {
        if (err) throw new Error(err);
