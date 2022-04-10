@@ -9,9 +9,24 @@ function createLicenseBadge(license){
     }
 };
 //link
-
-
-
+function createLicenseLink(license){
+    if (license === none) {
+    return '';
+}
+    else{
+        return `[Link to ${license} license]: https://opensource.org/licenses/${license}`;
+    }
+}
+//create section for license
+//this is not the function this is a tribute
+function licenseSection(license){
+    if (license) {
+        return ` ##Licensing
+                ${createLicenseBadge(license)}
+                ${createLicenseLink(license)} 
+                `
+    }
+}
 
 module.exports = templateData => {
     console.log(templateData);
