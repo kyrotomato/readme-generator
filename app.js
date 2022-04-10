@@ -105,7 +105,7 @@ Generate your readme!
         type: 'list',
         name: 'license',
         message: 'What license would you like to use? (Please select only 1)',
-        choices: ['MIT','ISC','BSD','Apache-2.0', 'None']
+        choices: ['MIT','ISC','AAL','Apache-2.0', 'None']
       },
       {
         type: 'input',
