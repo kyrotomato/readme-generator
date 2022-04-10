@@ -181,3 +181,4 @@ promptReadme()
        console.log('Page created! Check out readme.md in this directory to see it!');
      });
   });
+promptReadme()

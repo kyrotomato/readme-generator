@@ -53,6 +53,8 @@ ${templateData.testing}
 ## Languages#
 ${templateData.languages}
 
+${licenseSection(data.license)}
+
 ## Links
 ${templateData.githubLink} - 
 ${templateData.deployedLink}
