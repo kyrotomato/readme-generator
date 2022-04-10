@@ -1,43 +1,43 @@
 //create function for licenses
 //badge
-function createLicenseBadge(license){
-    if (license === 'None'){
+
+function createLicenseBadge(license) {
+    if (license === 'None') {
         return '';
     }
     else {
-       return '[![License: ${license}](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})'
+        return `[![License: ${license}](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})`
     }
 };
 //link
-function createLicenseLink(license){
+function createLicenseLink(license) {
     if (license === 'None') {
-    return '';
-}
-    else{
+        return '';
+    }
+    else {
         return `[Link to ${license} license]: https://opensource.org/licenses/${license}`;
     }
 }
 //create section for license
 //this is not the function this is a tribute
-function licenseSection(license){
+function licenseSection(license) {
     if (license === 'None') {
-    return '';
+        return '';
     }
-    else{
-        return`
-         
+    else {
+        return `
         ## Licensing
         ${createLicenseBadge(license)}
 
         ${createLicenseLink(license)} 
         `
-        
+
     }
 }
 
 module.exports = templateData => {
     console.log(templateData);
-  
+
     return `
     # ${templateData.name}
 ## Description
@@ -57,7 +57,7 @@ ${templateData.usage}
 ${templateData.contributing}
 ## Tests
 ${templateData.testing}
-## Languages#
+## Languages
 ${templateData.languages}
 
 ${licenseSection(templateData.license)}
@@ -68,4 +68,4 @@ ${templateData.deployedLink}
 ## Questions
 For further questions, please contact me at: [GitHub]('https://github.com/'${templateData.username}) or ${templateData.email}
     `;
-  };
+};
