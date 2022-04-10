@@ -1,3 +1,19 @@
+//create function for licenses
+//badge
+function createLicenseBadge(license){
+    if (license===none){
+        var licenseBadge = 'None'
+    }
+    else {
+        var licenseBadge = '[![License: ${license}](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})'
+    }
+    createReadme(license)
+};
+//link
+
+
+
+function createReadme(license){
 module.exports = templateData => {
     console.log(templateData);
   
@@ -29,3 +45,4 @@ ${templateData.deployedLink}
 For further questions, please contact me at: [GitHub]('https://github.com/'${templateData.username}) or ${templateData.email}
     `;
   };
+};

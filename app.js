@@ -85,12 +85,12 @@ Generate your readme!
       {
         type: 'input',
         name: 'testing',
-        message: 'What were your tests?',
+        message: 'Please enter your testing instructions if any',
         validate: testsInput => {
           if (testsInput) {
             return true;
           } else {
-            console.log('Please enter your tests!');
+            console.log('Please enter your testing instructions!');
             return false;
           }
         }
@@ -100,6 +100,12 @@ Generate your readme!
         name: 'languages',
         message: 'What did you this project with? (Check all that apply)',
         choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+      },
+      {
+        type: 'list',
+        name: 'licenses',
+        message: 'What license would you like to use? (Please select only 1)',
+        choices: ['MIT','ISC','BSD','Apache-2.0', 'None']
       },
       {
         type: 'input',
