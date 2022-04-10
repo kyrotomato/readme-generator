@@ -65,6 +65,6 @@ ${licenseSection(templateData.license)}
 ${templateData.githubLink} - 
 ${templateData.deployedLink}
 ## Questions
-For further questions, please contact me at: [GitHub]('https://github.com/'${templateData.username}) or ${templateData.email}
+For further questions, please contact me at: [GitHub]('https://github.com/'${templateData.githubUser}) or ${templateData.email}
     `;
 };

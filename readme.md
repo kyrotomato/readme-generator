@@ -1,7 +1,7 @@
 
-    # asdf
+    # Professional Readme Generator
 ## Description
-asdf
+This will use prompts to tailor a custom Readme for your project
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -10,22 +10,22 @@ asdf
 - [Tests](#tests)
 - [Questions](#questions)
 ## Installation
-asdf
+Run the application and follow the prompts!
 ## Usage
-asdf
+Insert video here
 ## Contribution
-asdf
+None
 ## Tests
-sadf
+None
 ## Languages
-Node
+JavaScript,ES6,Node
 
-## Licensing <br> [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+## Licensing <br>  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
         
 
 ## Links
-asdf - 
-asdf
+https://github.com/kyrotomato/readme-generator - 
+https://kyrotomato.github.io/readme-generator/
 ## Questions
-For further questions, please contact me at: [GitHub]('https://github.com/'undefined) or fasdf
+For further questions, please contact me at: [GitHub]('https://github.com/'kyrotomato) or thomasmccalister@gmail.com
     

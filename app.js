@@ -175,9 +175,9 @@ promptReadme()
   .then(readmeData => {
     const pageMD = generatePage(readmeData);
 
-     fs.writeFile('./readme.md', pageMD, err => {
+     fs.writeFile('./generated readme/readme.md', pageMD, err => {
        if (err) throw new Error(err);
 
-       console.log('Page created! Check out readme.md in this directory to see it!');
+       console.log('Page created! Check out readme.md in the generated readme folder to see it!');
      });
   });
