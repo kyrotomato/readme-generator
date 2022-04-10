@@ -1,7 +1,7 @@
 //create function for licenses
 //badge
 function createLicenseBadge(license){
-    if (license=== None){
+    if (license === 'None'){
         return '';
     }
     else {
@@ -10,7 +10,7 @@ function createLicenseBadge(license){
 };
 //link
 function createLicenseLink(license){
-    if (license === None) {
+    if (license === 'None') {
     return '';
 }
     else{
@@ -20,11 +20,18 @@ function createLicenseLink(license){
 //create section for license
 //this is not the function this is a tribute
 function licenseSection(license){
-    if (license) {
-        return ` ##Licensing
-                ${createLicenseBadge(license)}
-                ${createLicenseLink(license)} 
-                `
+    if (license === 'None') {
+    return '';
+    }
+    else{
+        return`
+         
+        ## Licensing
+        ${createLicenseBadge(license)}
+
+        ${createLicenseLink(license)} 
+        `
+        
     }
 }
 
