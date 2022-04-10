@@ -2,18 +2,17 @@
 //badge
 function createLicenseBadge(license){
     if (license===none){
-        var licenseBadge = 'None'
+        return '';
     }
     else {
-        var licenseBadge = '[![License: ${license}](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})'
+       return '[![License: ${license}](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})'
     }
-    createReadme(license)
 };
 //link
 
 
 
-function createReadme(license){
+
 module.exports = templateData => {
     console.log(templateData);
   
@@ -38,6 +37,7 @@ ${templateData.contributing}
 ${templateData.testing}
 ## Languages#
 ${templateData.languages}
+
 ## Links
 ${templateData.githubLink} - 
 ${templateData.deployedLink}
@@ -45,4 +45,3 @@ ${templateData.deployedLink}
 For further questions, please contact me at: [GitHub]('https://github.com/'${templateData.username}) or ${templateData.email}
     `;
   };
-};
