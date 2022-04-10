@@ -37,8 +37,7 @@ function licenseSection(license) {
 module.exports = templateData => {
     console.log(templateData);
 
-    return `
-    # ${templateData.name}
+    return `## ${templateData.name}
 ## Description
 ${templateData.description}
 ## Table of Contents

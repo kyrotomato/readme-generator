@@ -1,5 +1,5 @@
 
-    # Professional Readme Generator
+# Professional Readme Generator
 ## Description
 This will use prompts to tailor a custom Readme for your project
 ## Table of Contents
