@@ -12,7 +12,7 @@ This will use prompts to tailor a custom Readme for your project
 ## Installation
 Run the application and follow the prompts!
 ## Usage
-https://github.com/kyrotomato/readme-generator/
+https://drive.google.com/file/d/17nNLzB_jFgZt4a_zwLa1h5LaxVkuL2X7/view?usp=sharing
 ## Contribution
 None
 ## Tests
