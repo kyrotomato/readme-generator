@@ -103,7 +103,7 @@ Generate your readme!
       },
       {
         type: 'list',
-        name: 'licenses',
+        name: 'license',
         message: 'What license would you like to use? (Please select only 1)',
         choices: ['MIT','ISC','BSD','Apache-2.0', 'None']
       },
@@ -181,4 +181,3 @@ promptReadme()
        console.log('Page created! Check out readme.md in this directory to see it!');
      });
   });
-promptReadme()

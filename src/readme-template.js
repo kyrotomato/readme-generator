@@ -1,7 +1,7 @@
 //create function for licenses
 //badge
 function createLicenseBadge(license){
-    if (license===none){
+    if (license=== None){
         return '';
     }
     else {
@@ -10,7 +10,7 @@ function createLicenseBadge(license){
 };
 //link
 function createLicenseLink(license){
-    if (license === none) {
+    if (license === None) {
     return '';
 }
     else{
@@ -53,7 +53,7 @@ ${templateData.testing}
 ## Languages#
 ${templateData.languages}
 
-${licenseSection(data.license)}
+${licenseSection(templateData.license)}
 
 ## Links
 ${templateData.githubLink} - 
