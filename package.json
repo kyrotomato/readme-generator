@@ -1,6 +1,5 @@
 {
   "dependencies": {
     "inquirer": "^8.2.2",
-    "node": "^17.7.2"
   }
 }
