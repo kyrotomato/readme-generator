@@ -26,6 +26,9 @@ JavaScript,ES6,Node
 ## Links
 https://github.com/kyrotomato/readme-generator - 
 https://kyrotomato.github.io/readme-generator/
+
+![image](https://user-images.githubusercontent.com/97704480/180243143-828030f7-bdf9-4c55-970d-3fc4eea044e4.png)
+
 ## Questions
 For further questions, please contact me at: [GitHub]('https://github.com/'kyrotomato) or thomasmccalister@gmail.com
     
